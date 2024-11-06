@@ -1,23 +1,19 @@
 <div class="container__big-card">
     <div class="big-card__photo">
         <img 
-        src="https://cdn.britannica.com/49/182849-050-4C7FE34F/scene-Iron-Man.jpg" 
+        src={{photoCover}} 
         alt=""
         height="500px"
         srcset=""
         >
     </div>
     <div class="big-card__title">
-        <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+        <h1><a [routerLink]="['content', Id]">{{cardTitle}}</a></h1>
     </div>
     <div class="big-card__description">
         <p>
-            <a href="#">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Quisque scelerisque, ex at tincidunt pretium, sem augue 
-             pulvinar nunc, ac pellentesque felis metus nec mauris.
-              Mauris eu convallis neque, non tempus libero. 
-              Etiam eleifend dictum efficitur.
+            <a [routerLink]="['content', Id]">
+            {{cardDescription}}
             </a> 
         </p>
     </div>
